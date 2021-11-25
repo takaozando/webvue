@@ -1,23 +1,35 @@
 <template>
   <v-app id="inspire">
-    <v-system-bar app dark>
+    <v-toolbar  app color="red" extended extension-height="10" >
+
       <v-spacer></v-spacer>
-      <v-icon>mdi-window-minimize</v-icon>
-      <v-icon>mdi-window-maximize</v-icon>
-      <v-icon>mdi-window-close</v-icon>
-    </v-system-bar>
+        <router-link to = "/stream">
+          <v-btn icon>
+            <v-icon>mdi-access-point</v-icon>
+          </v-btn>
+        </router-link>
 
-    <v-app-bar app dark elevation="10">
-      <v-spacer></v-spacer>
+      <router-link to = "/playlist">
+        <v-btn icon>
+          <v-icon>mdi-folder</v-icon>
+        </v-btn>
+      </router-link>
 
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+      <router-link to = "/friends">
+        <v-btn icon>
+          <v-icon>mdi-account-multiple</v-icon>
+        </v-btn>
+      </router-link>
 
+      <router-link to = "/favs">
+        <v-btn icon>
+          <v-icon>mdi-star</v-icon>
+        </v-btn>
+      </router-link>
 
-    </v-app-bar>
+    </v-toolbar>
 
-    <v-navigation-drawer app dark permanent expand-on-hover color = "#F12711">
+    <v-navigation-drawer app dark  expand-on-hover color = "red" clipped-left >
       <v-list>
         <v-list-item class="px-2">
           <v-list-item-avatar>
@@ -36,52 +48,57 @@
       <v-divider></v-divider>
 
       <v-list nav dense>
-         <v-list-item link>
-          <v-list-item-icon>
-            <v-icon>mdi-access-point</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Streaming</v-list-item-title>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-icon>
-            <v-icon>mdi-folder</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Minhas playlists</v-list-item-title>
-        </v-list-item>
+
+        <router-link to = "/stream">
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>mdi-access-point</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Streaming</v-list-item-title>
+          </v-list-item>
+        </router-link>
+        
+        <router-link to = "/playlist">
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>mdi-folder</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Minhas playlists</v-list-item-title>
+          </v-list-item>
+        </router-link>
+
+        <router-link to = "/friends">
         <v-list-item link>
           <v-list-item-icon>
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Conexões</v-list-item-title>
         </v-list-item>
+        </router-link>
+
+        <router-link to = "/favs">
         <v-list-item link>
           <v-list-item-icon>
             <v-icon>mdi-star</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Favoritos</v-list-item-title>
         </v-list-item>
+        </router-link>
+
       </v-list>
     </v-navigation-drawer>
 
     <v-main class="black">
       <v-container>
-        <v-row>
-          <template v-for="n in 2">
-            <v-col :key="n" class="mt-2" cols="12">
-              <strong class="orange--text">Suas músicas {{ n }}</strong>
-            </v-col>
-
-            <v-col v-for="j in 12" :key="`${n}${j}`" cols="6" md="2">
-              <v-sheet color="grey" height="150" width = "290"  outlined shaped ></v-sheet>
-            </v-col>
-          </template>
-        </v-row>
+        <router-view> </router-view>
       </v-container>
     </v-main>
 
+
+
     <v-footer app dark padless>
       <v-col class="text-center" cols="12">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>Trance.fy</strong>
       </v-col>
     </v-footer>
 
@@ -110,7 +127,7 @@
       </v-btn>
 
       <v-btn>
-        <span>Adicionado à playlist</span>
+        <span>+Playlist</span>
 
         <v-icon>mdi-playlist-music</v-icon>
       </v-btn>
