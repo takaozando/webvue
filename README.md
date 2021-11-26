@@ -24,12 +24,11 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Preview
-![img](src/assets/AF2 DJs.png)
+![img](src/assets/af2-djs.png)
 
-![img](src/assets/AF2 Favs.png)
+![img](src/assets/af2-favs.png)
 
-![img](src/assets/AF2 Friends.png)
+![img](src/assets/af2-friends.png)
 
-![img](src/assets/AF2 streaming.png)
+![img](src/assets/af2-streaming.png)
 
-![img](src/assets/preview.png)
