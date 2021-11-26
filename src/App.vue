@@ -1,35 +1,35 @@
 <template>
   <v-app id="inspire">
-    <v-toolbar  app color="red" extended extension-height="10" >
+    <v-toolbar  app color="#854594" max-height="50px" height="50px"  >
 
       <v-spacer></v-spacer>
         <router-link to = "/stream">
           <v-btn icon>
-            <v-icon>mdi-access-point</v-icon>
+            <v-icon large>mdi-access-point</v-icon>
           </v-btn>
         </router-link>
 
-      <router-link to = "/playlist">
+      <router-link to = "/dj">
         <v-btn icon>
-          <v-icon>mdi-folder</v-icon>
+          <v-icon large>mdi-account-music</v-icon>
         </v-btn>
       </router-link>
 
       <router-link to = "/friends">
         <v-btn icon>
-          <v-icon>mdi-account-multiple</v-icon>
+          <v-icon large>mdi-account-multiple</v-icon>
         </v-btn>
       </router-link>
 
       <router-link to = "/favs">
         <v-btn icon>
-          <v-icon>mdi-star</v-icon>
+          <v-icon large>mdi-star</v-icon>
         </v-btn>
       </router-link>
 
     </v-toolbar>
 
-    <v-navigation-drawer app dark  expand-on-hover color = "red" clipped-left >
+    <v-navigation-drawer app dark  expand-on-hover color = "#854594" clipped-left >
       <v-list>
         <v-list-item class="px-2">
           <v-list-item-avatar>
@@ -58,12 +58,12 @@
           </v-list-item>
         </router-link>
         
-        <router-link to = "/playlist">
+        <router-link to = "/dj">
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon>mdi-folder</v-icon>
+              <v-icon>mdi-account-music</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Minhas playlists</v-list-item-title>
+            <v-list-item-title>Meus DJs</v-list-item-title>
           </v-list-item>
         </router-link>
 
@@ -96,33 +96,23 @@
 
 
 
-    <v-footer app dark padless>
-      <v-col class="text-center" cols="12">
-        {{ new Date().getFullYear() }} — <strong>Trance.fy</strong>
-      </v-col>
-    </v-footer>
+    
 
     <v-bottom-navigation app v-model="value"
     :background-color="color"
     dark
-    shift >
+    shift 
+    height="40px">
 
       <v-btn>
-        <span>Anterior</span>
-
         <v-icon>mdi-skip-previous</v-icon>
       </v-btn>
 
        <v-btn>
-        <span>Play/Pause</span>
-
         <v-icon>mdi-play-pause</v-icon>
       </v-btn>
 
       <v-btn>
-
-        <span>Próxima</span>
-
         <v-icon>mdi-skip-next</v-icon>
       </v-btn>
 
@@ -141,8 +131,7 @@
     computed: {
       color () {
         switch (this.value) {
-          case 3: return '#F12711'
-          
+          case 3: return '#6a1c7c'
         }
       },
     },

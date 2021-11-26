@@ -14,12 +14,12 @@ export default new Vuex.Store({
       {
         nome: 'Morten Granau',
         vertente: 'Off Beat',
-        imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbnKOP8Hc9U6CWRcvBwz7Y7tX-2PHxlK2nwYomciGTeTXWKCB0Vl7B_AiFngFQMJZdabA&usqp=CAU',
+        imgUrl: 'https://scontent.fcpq4-1.fna.fbcdn.net/v/t1.6435-9/162546706_277144407111750_6005443837168651640_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGxhImmSq_U5ai0yVygpk1bvNiARtvm6tm82IBG2-bq2XnH6od1UCO03cWYMex7aX4FmRBG4lGGumZI-6f6-geB&_nc_ohc=6Y5tMvMYww4AX-SFZ95&_nc_ht=scontent.fcpq4-1.fna&oh=390805384a3c282f4c6b503546ac5a24&oe=61C3EC38',
       },
       {
         nome: 'Phaxe',
         vertente: 'Off Beat',
-        imgUrl: 'http://seasonbookings.com.br/wp-content/uploads/2019/07/phaxe.png',
+        imgUrl: 'https://psymedia.co.za/wp-content/uploads/phax1.jpg',
       },
       {
         nome: 'Metronome',
@@ -44,7 +44,7 @@ export default new Vuex.Store({
       {
         nome: 'Djapatox',
         vertente: 'Prog',
-        imgUrl: 'https://geo-media.beatport.com/image_size/590x404/0c02725a-b682-4a38-a1c5-43b8f8df0525.jpg',
+        imgUrl: 'https://scontent.fcpq4-1.fna.fbcdn.net/v/t1.6435-9/73319934_1311795569004016_6448746305199013888_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_eui2=AeE2pa2sbJ83p5ZdKM_uZrz0bignfJu-AQluKCd8m74BCUIn440ySLajDFQk3asvF36aL-l6y-Usw981vfh8d5Gj&_nc_ohc=dArY5L1pM7sAX9jbSl6&_nc_ht=scontent.fcpq4-1.fna&oh=8a6f83efb3378d1dc2491c59f330477b&oe=61C606B1',
       },
       {
         nome: 'Vegas',

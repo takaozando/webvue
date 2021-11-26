@@ -8,15 +8,10 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import( '../views/Favs.vue')
+    component: () => import( '../views/Home.vue')
   },
   {
-    path: '/about',
-    name: 'About',
-
-    component: () => import( '../views/Favs.vue')
-  },
-  {
+    
     path: '/favs',
     name: 'Favoritos',
 
@@ -26,10 +21,10 @@ const routes = [
     path: '/stream',
     name: 'Live',
 
-    component: () => import( '../views/Streaming.vue')
+    component: () => import( '../views/Home.vue')
   },
   {
-    path: '/playlist',
+    path: '/dj',
     name: 'Playlist',
 
     component: () => import( '../views/MyPlaylist.vue')
