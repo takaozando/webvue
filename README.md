@@ -23,5 +23,13 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### Page preview
+### Preview
+![img](src/assets/AF2 DJs.png)
+
+![img](src/assets/AF2 Favs.png)
+
+![img](src/assets/AF2 Friends.png)
+
+![img](src/assets/AF2 streaming.png)
+
 ![img](src/assets/preview.png)
